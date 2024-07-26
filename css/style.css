@@ -745,6 +745,7 @@ span .circle-5 {
   border-radius: 10rem;
   text-align: center;
   margin-right: 1rem;
+  width: 11rem;
 }
 .skills .row .btn-skills a:hover {
   background-color: var(--primary);
@@ -1129,6 +1130,7 @@ footer .sosmed img:hover {
 
   .services .row {
     height: auto;
+    margin: auto;
   }
   .services .row .col-left {
     display: flex;
@@ -1154,7 +1156,7 @@ footer .sosmed img:hover {
 
   .project .row {
     height: auto;
-    padding: 0 7%;
+    margin: auto;
   }
   .project .row .container .item {
     width: 100%;
@@ -1164,11 +1166,9 @@ footer .sosmed img:hover {
 
   /* about section start */
 
-  .about {
-    height: auto;
-  }
   .about .row {
-    margin-top: 15rem;
+    height: auto;
+    margin: auto;
   }
   .about .profil img {
     display: none;
@@ -1181,8 +1181,36 @@ footer .sosmed img:hover {
   /* about section end */
 
   /* skill section start */
+.skills .row .btn-skills{
+  justify-content: center;
+}
+
+  /* .skills .row .tools{
+    gap: 0;
+    margin: 0 0;
+  }
   .skills .row .btn-skills {
     justify-content: center;
   }
+
+  .skills .row .container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .skills .row .tools {
+    margin: 0 0;
+    gap: 0rem;
+    padding: 0 0;
+  }
+  .skills .row .container .isi-tool {
+    margin: 0 0;
+    transform: scale(0.5);
+    padding: 0 0;
+    align-items: start;
+  }
+  .skills .row .container .isi-tool:hover {
+    transform: scale(0.7);
+  } */
   /* skill section end */
 }
