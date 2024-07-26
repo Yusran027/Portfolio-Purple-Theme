@@ -760,7 +760,7 @@ span .circle-5 {
   align-items: start;
   margin-top: 2rem;
 }
-
+/* Tools */
 /* Tools */
 .skills .row .tools {
   display: flex;
@@ -769,6 +769,7 @@ span .circle-5 {
   margin-top: 1rem;
   flex-wrap: wrap;
 }
+
 .skills .row .tools .isi-tool {
   position: relative;
   padding: 0.5rem 0.5rem;
@@ -778,39 +779,53 @@ span .circle-5 {
   display: flex;
   align-items: center;
   border-radius: 10px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   filter: grayscale(90%);
 }
+
 .skills .row .tools .isi-tool:hover {
   background-color: var(--primary);
   transform: scale(1.1);
   transition: all 300ms;
   border: 1px solid white;
   box-shadow: 0 0px 10px #44239e;
-  filter: grayscale(0%);
+  filter: grayscale(0%);  
 }
+
 .skills .row .tools .isi-tool img {
   height: 3.5rem;
   width: 3.5rem;
+  margin-right: 0.5rem; 
 }
+
 .skills .row .tools .jenis-tool {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  padding: 0.5rem;
+  display: block;
+  width: calc(100% - 4rem);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: start;
 }
+
 .skills .row .tools .jenis-tool h5 {
   user-select: none;
   font-size: 1.3rem;
   font-weight: 400;
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
+  overflow: hidden; /* Hide text that exceeds the element's width */
+  text-overflow: ellipsis; /* Add ellipsis (...) to truncated text */
+  margin: 0; /* Remove margin to prevent extra space */
 }
+
 .skills .row .tools .jenis-tool p {
   user-select: none;
   font-size: 1rem;
   font-weight: 100;
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
+  overflow: hidden; /* Hide text that exceeds the element's width */
+  text-overflow: ellipsis; /* Add ellipsis (...) to truncated text */
+  margin: 0; /* Remove margin to prevent extra space */
 }
+
 
 /* Skill Section End */
 
