@@ -1,0 +1,1161 @@
+:root {
+  --primary: #501bb9;
+  --bg: #050817;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 .title {
+  font-size: 2rem;
+  font-weight: 100;
+  letter-spacing: 13px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+/* Pseudo-elemen untuk ornamen bulat */
+/* .pseudo::before {
+  content: ''; 
+  position: absolute; 
+  top: 30%; 
+  left: 5%; 
+  width: 4px; 
+  height: 26rem;
+  background: linear-gradient(to bottom, var(--primary), rgba(255, 0, 0, 0) 100%); 
+  z-index: -1; 
+}
+
+.pseudo::after {
+  content: '';
+  position: absolute; 
+  top: 30%;
+  left: 4.4%; 
+  width: 20px; 
+  height: 20px; 
+  background: radial-gradient(circle, var(--primary) 100%, transparent 100%); 
+  border-radius: 50%;
+  z-index: -1; 
+} */
+/* Pseudo-elemen untuk ornamen end */
+
+.btn-primary {
+  background: linear-gradient(to bottom, #915cf9, #563693);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transisi smooth */
+  border-radius: 8px;
+  height: 40px; /* Menentukan tinggi tombol */
+  width: 140px; /* Menentukan lebar tombol */
+  padding: 0; /* Reset padding untuk kontrol penuh */
+  display: inline-flex; /* Menggunakan inline-flex untuk memastikan isi tombol ditengah */
+  align-items: center; /* Vertikal tengah */
+  justify-content: center; /* Horizontal tengah */
+  text-align: center; /* Center text alignment */
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to bottom, #5035c9, #44239e); /* Gradasi latar belakang saat tombol dihover */
+  color: #ffffff; /* Warna teks saat tombol dihover */
+  border: 2px solid var(--primary);
+}
+
+.btn-secondary {
+  background: var(--bg);
+  color: #ffffff;
+  border: 2px solid var(--primary);
+  font-size: 16px;
+  font-weight: 400;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transisi smooth */
+  border-radius: 8px;
+  height: 40px; /* Menentukan tinggi tombol */
+  width: 140px; /* Menentukan lebar tombol */
+  padding: 0; /* Reset padding untuk kontrol penuh */
+  display: inline-flex; /* Menggunakan inline-flex untuk memastikan isi tombol ditengah */
+  align-items: center; /* Vertikal tengah */
+  justify-content: center; /* Horizontal tengah */
+  text-align: center; /* Center text alignment */
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(to bottom, #5035c9, #44239e); /* Gradasi latar belakang saat tombol dihover */
+  color: #ffffff; /* Warna teks saat tombol dihover */
+  border: var(--primary);
+}
+
+body {
+  font-family: 'roboto', 'poppins';
+  background-color: var(--bg);
+  color: #fff;
+  /* min-height: 3000px; */
+}
+
+/* navbar start */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 7%;
+  background-color: rgba(151, 45, 45, 0);
+  border-bottom: 1px solid #614daa;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 2rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: '';
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* navbar search end */
+
+/* hero section start */
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  padding: 0 7%;
+  position: relative;
+}
+
+.hero .row {
+  display: flex; /* Mengatur elemen sebagai flex container */
+  justify-content: start; /* Memusatkan elemen horizontal */
+  align-items: center; /* Memusatkan elemen vertikal */
+  /* flex-wrap: wrap ; */
+  height: 100vh;
+}
+
+.hero .row .content {
+  width: 60%;
+  text-align: start;
+  position: relative;
+}
+
+.hero .row .circle {
+  content: '';
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: -3.5rem;
+  background: radial-gradient(circle, var(--primary) 100%, transparent 100%);
+  border-radius: 50%;
+}
+
+.hero .row .content .line {
+  content: '';
+  position: absolute;
+  width: 0.5rem;
+  height: 26rem;
+  margin-left: -3rem;
+  background: linear-gradient(to bottom, var(--primary), rgba(255, 0, 0, 0) 100%);
+}
+
+.hero .row .content h1 {
+  font-size: 5rem;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  line-height: 1.5;
+}
+
+.hero .row .content h1 span {
+  color: var(--primary);
+}
+
+.hero .row .content p {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  line-height: 1.4;
+  font-weight: 200;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.514);
+  /* mix-blend-mode: difference; */
+}
+
+.hero .row .content a {
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+
+.hero .row .profil {
+  /* background-color: red; */
+  width: 40%;
+  /* height: 100vh; */
+  display: flex; /* Menggunakan Flexbox dalam elemen profil juga */
+  justify-content: center; /* Menempatkan konten di tengah secara horizontal */
+  align-items: center; /* Menempatkan konten di tengah secara vertikal */
+}
+
+.hero .row .profil .circle-container {
+  position: relative;
+  width: 30.375rem; /* Sesuaikan ukuran */
+  height: 30.375rem; /* Sesuaikan ukuran */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid var(--primary); /* Border ungu */
+  border-radius: 50%; /* Membuat bentuk lingkaran */
+}
+
+/* Laser animasi */
+.hero .row .profil .laser {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px; /* Lebar titik */
+  height: 8px; /* Tinggi titik */
+  background-color: #44239e; /* Warna titik */
+  border-radius: 50%;
+  transform-origin: 0 0; /* Titik rotasi */
+  animation: rotate 4s linear infinite;
+  box-shadow: 0 0 10px 1px #6035b7; /* Efek ekor */
+  z-index: 1;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate(15.1875rem) translate(-50%, -50%);
+  }
+  100% {
+    transform: rotate(360deg) translate(15.1875rem) translate(-50%, -50%);
+  }
+}
+
+.hero .row .profil img {
+  /* display: none; */
+  width: 30.375rem;
+  height: 30.375rem;
+  border-radius: 50%;
+  border-style: outset;
+  object-fit: cover;
+  box-shadow: 0 0px 20px var(--primary); /* Warna, ukuran, dan spread bayangan */
+}
+
+/* hero section end */
+
+/* Services Section Start */
+.services {
+  height: 100vh;
+  width: 100%;
+  padding: 0 7%;
+  position: relative;
+}
+.services .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.services .row .col-left {
+  /* background-color: red; */
+  width: 70%;
+  line-height: 2rem;
+}
+.services .row .col-left span {
+  color: var(--primary);
+}
+.services .row .col-left p {
+  font-size: 1.5rem;
+  margin: 2rem 0 2rem 0;
+  line-height: 3rem;
+}
+
+.services .row .col-1 {
+  /* background-color: green; */
+  margin-top: 0;
+  padding: 0;
+  width: 20rem;
+}
+
+.services .row .col-2 {
+  /* background-color:yellow; */
+  margin-top: 6rem;
+  padding: 0;
+  width: 20rem;
+}
+
+.grid-service-a,
+.grid-service-b {
+  display: flex; /* Menggunakan Flexbox untuk memudahkan pemusatan */
+  flex-wrap: wrap; /* Mengizinkan elemen membungkus ke baris berikutnya jika diperlukan */
+  gap: 2rem; /* Jarak antar kartu */
+  padding: 1rem; /* Padding untuk grid container */
+  margin: 0px; /* Memusatkan grid container secara horizontal */
+  justify-content: center; /* Memusatkan kartu secara horizontal */
+  align-items: center; /* Memusatkan kartu secara vertikal */
+}
+
+.col-1 .card {
+  height: 20rem;
+  width: 20rem;
+  background: linear-gradient(to bottom, #33215881, #1a112d00);
+  border: 0.1rem solid #6035b7;
+  border-radius: 10px;
+  box-shadow: inset 0 0px 10px #6035b7;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: translateY(-50px); /* Start with the card above its final position */
+  animation: slideDown 1.4s ease-out forwards; /* Apply animation */
+}
+.col-2 .card {
+  height: 20rem;
+  width: 20rem;
+  background: linear-gradient(to bottom, #33215881, #1a112d00);
+  border: 0.1rem solid #6035b7;
+  border-radius: 10px;
+  box-shadow: inset 0 0px 10px #6035b7;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: translateY(-50px); /* Start with the card above its final position */
+  animation: slideDown 1s ease-out forwards; /* Apply animation */
+  transition: transform 500ms ease-out;
+}
+
+@keyframes slideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Move to the final position */
+  }
+}
+
+.card:hover {
+  cursor: default;
+}
+
+.card .img-1 {
+  width: 4rem;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0px 0px 0.1rem #563693);
+}
+
+.card h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.card p {
+  line-height: 2rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* Services Section end */
+
+/* project section start */
+.project {
+  height: 100vh;
+  width: 100%;
+  padding: 0 7%;
+  position: relative;
+}
+.project .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Mengatur item dalam kolom */
+  height: 100vh;
+  margin-top: 5rem;
+}
+
+.project .row h2 span {
+  color: var(--primary);
+}
+
+.project .row .categori {
+  margin: 2rem 0 4rem 0;
+  display: flex;
+  gap: 1rem; /* Menambahkan gap antar tombol */
+  justify-content: center; /* Memusatkan tombol secara horizontal */
+  /* flex-wrap: wrap; */
+}
+
+.project .row .categori a {
+  width: 10rem;
+  display: inline-block;
+  padding: 0.5rem 2rem; /* Tambahkan padding untuk tombol */
+  background-color: #00000000; /* Tambahkan latar belakang untuk tombol */
+  color: rgb(253, 246, 246); /* Ubah warna teks tombol */
+  border: 1px solid #44239e;
+  text-decoration: none; /* Hilangkan garis bawah */
+  border-radius: 10rem; /* Tambahkan radius border untuk sudut yang melengkung */
+  text-align: center; /* Pastikan teks di tengah dalam tombol */
+  white-space: nowrap; /* Mencegah teks turun ke baris berikutnya */
+  overflow: hidden; /* Menyembunyikan teks yang melebihi elemen */
+  text-overflow: ellipsis; /* Menambahkan elipsis (...) pada teks yang terpotong */
+}
+
+.project .row .categori a:hover {
+  background-color: var(--primary);
+}
+.project .row .categori .active {
+  background-color: var(--primary);
+}
+
+.project .row .container {
+  padding: 0 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Membungkus elemen anak ke baris berikutnya */
+  gap: 2rem;
+  width: 100%; /* Pastikan kontainer menggunakan lebar penuh */
+}
+
+.project .row .container .item {
+  position: relative;
+  width: 17rem;
+  height: 23rem;
+  border: 2px solid var(--primary);
+  overflow: hidden;
+  box-shadow: 0 0px 10px #44239e; /* Bayangan putih */
+  opacity: 0; /* Initial state */
+  transform: translateY(-40px); /* Start from higher above */
+  transition: transform 1s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 1s ease-out; /* Smooth transition */
+}
+
+.project .row .container .item.show {
+  opacity: 1;
+  transform: translateY(0); /* Bergerak ke posisi akhir */
+}
+
+.project .row .container .item.show {
+  opacity: 1;
+  transform: translateY(0); /* Move to the final position */
+}
+
+.project .row .container .item.show:nth-child(1) {
+  transition-delay: 0s;
+}
+
+.project .row .container .item.show:nth-child(2) {
+  transition-delay: 0.25s;
+}
+
+.project .row .container .item.show:nth-child(3) {
+  transition-delay: 0.5s;
+}
+
+.project .row .container .item.show:nth-child(4) {
+  transition-delay: 0.75s;
+}
+
+.project .row .container .item:hover {
+  transform: scale(1.04); /* Membesarkan elemen saat di-hover */
+  /* transition: 500ms; */
+  /* filter: brightness(1); */
+}
+
+.project .row .container .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 500ms;
+}
+
+.project .row .container .item:hover img {
+  transform: scale(1.1); /* Membesarkan gambar saat item di-hover */
+}
+
+.project .row .container .item figcaption {
+  position: absolute;
+  bottom: -23rem;
+  background: linear-gradient(to bottom, rgba(3, 2, 5, 0.473), rgb(45, 27, 83)); /* Menggunakan nilai alpha yang lebih tinggi */
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  transition: bottom 500ms; /* Transisi untuk gerakan hover */
+}
+
+.project .row .container .item:hover figcaption {
+  bottom: 0;
+  cursor: pointer;
+}
+
+.project .row .container .item figcaption h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.project .row .container .item figcaption p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.project .row .container .item figcaption img {
+  align-self: center; /* Memastikan gambar berada di tengah secara horizontal */
+  height: 2rem;
+  width: 2rem;
+  background-color: white;
+  border-radius: 50%;
+  padding: 0.3rem;
+  margin-top: 1rem;
+}
+
+/* project section end */
+
+/* about section start */
+.about {
+  /* min-height: 100vh; */
+  padding: 0 7%;
+  position: relative;
+}
+
+.about .row {
+  display: flex;
+  text-align: start;
+  height: 100vh;
+  flex-direction: row; /* Ubah dari column ke row */
+}
+
+.about .row .profil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  order: 1;
+}
+
+.about .row .profil img {
+  width: 36.9375rem; /* 591px */
+  height: 26.375rem; /* 422px */
+  object-fit: cover; /* Menyesuaikan gambar agar tidak terdistorsi */
+  position: relative; /* Memastikan gambar berada di atas pseudo-elemen */
+  z-index: 1; /* Mengatur z-index lebih tinggi dari pseudo-elemen */
+  border-radius: 20px 0 20px 0;
+}
+
+.about .row .profil::before {
+  content: ''; /* Membuat pseudo-elemen kosong */
+  position: absolute; /* Memungkinkan positioning absolut */
+  margin-top: 2rem; /* Menggeser border ke atas */
+  margin-left: 2rem; /* Menggeser border ke kiri */
+  width: calc(36.9375rem); /* Menambah ukuran border */
+  height: calc(26.375rem); /* Menambah ukuran border */
+  border: 0.3rem solid var(--primary); /* Border putih */
+  border-radius: 30px 0 30px 0; /* Jika Anda ingin border dengan sudut melengkung */
+  z-index: -1; /* Menempatkan pseudo-elemen di belakang gambar */
+}
+
+.about .row .desc {
+  margin-top: 1rem; /* Tambahkan margin atas agar teks tidak menempel pada gambar */
+  display: flex;
+  align-items: start;
+  align-self: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 3rem;
+  order: 2;
+}
+
+.about .row .desc h2 {
+  padding: 0rem 0rem 1rem 0rem;
+}
+
+.about .row .desc span {
+  color: var(--primary);
+}
+
+.about .row .desc p {
+  font-size: 1.5rem;
+  margin: 2rem 0 2rem 0;
+  line-height: 3rem;
+}
+
+.about .row .desc h2 {
+  padding: 0rem 0rem 1rem 0rem;
+}
+.about .row .desc span {
+  color: var(--primary);
+}
+
+.about .row .desc p {
+  font-size: 1.5rem;
+  margin: 2rem 0 2rem 0;
+  line-height: 3rem;
+}
+
+/* about section end */
+/* Skill Section Start */
+
+.skills {
+  width: 100%;
+  padding: 0 7%;
+  position: relative;
+}
+.skills .row {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 5rem 7%;
+  text-align: center;
+}
+
+.vertical-1 {
+  content: '';
+  position: absolute;
+  width: 0.2rem;
+  margin-left: -2.5rem;
+  margin-top: 1rem;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-self: start;
+}
+
+.circle-1,
+.circle-2,
+.circle-3,
+.circle-4,
+.circle-5 {
+  position: absolute;
+  background-color: white;
+  display: flex;
+  align-self: center;
+  margin-left: -3rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+}
+
+span .circle-1 {
+  top: 0; /* Ujung atas */
+  transform: translateX(-50%) translateY(-50%); /* Menyeimbangkan posisi tengah */
+  left: -3%;
+}
+
+span .circle-2 {
+  top: 23%; /* Tengah dari atas */
+  transform: translateX(-50%) translateY(-50%); /* Menyeimbangkan posisi tengah */
+  left: -3%;
+}
+
+span .circle-3 {
+  top: 44%; /* Tengah dari atas */
+  transform: translateX(-50%) translateY(-50%); /* Menyeimbangkan posisi tengah */
+  left: -3%;
+}
+span .circle-4 {
+  top: 65%; /* Tengah dari atas */
+  transform: translateX(-50%) translateY(-50%); /* Menyeimbangkan posisi tengah */
+  left: -3%;
+}
+span .circle-5 {
+  top: 86%; /* Tengah dari atas */
+  transform: translateX(-50%) translateY(-50%); /* Menyeimbangkan posisi tengah */
+  left: -3%;
+}
+
+/* Button Styles */
+.skills .row span {
+  color: var(--primary);
+}
+.skills .row .btn-skills {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: start;
+}
+.skills .row .btn-skills a {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  background: linear-gradient(to bottom, #33215881, #1a112d00);
+  border: 0.1rem solid #6035b7;
+  color: rgb(253, 246, 246);
+  text-decoration: none;
+  border-radius: 10rem;
+  text-align: center;
+  margin-right: 1rem;
+}
+.skills .row .btn-skills a:hover {
+  background-color: var(--primary);
+}
+.skills .row .btn-skills .active {
+  background-color: var(--primary);
+}
+
+/* Headings */
+.skills .row h3 {
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  align-items: start;
+  margin-top: 2rem;
+}
+
+/* Tools */
+.skills .row .tools {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+.skills .row .tools .isi-tool {
+  position: relative;
+  padding: 0.5rem 0.5rem;
+  border: 1px solid var(--primary);
+  height: 4rem;
+  width: 12rem;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  filter: grayscale(90%);
+}
+.skills .row .tools .isi-tool:hover {
+  background-color: var(--primary);
+  transform: scale(1.1);
+  transition: all 300ms;
+  border: 1px solid white;
+  box-shadow: 0 0px 10px #44239e;
+  filter: grayscale(0%);
+}
+.skills .row .tools .isi-tool img {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+.skills .row .tools .jenis-tool {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0.5rem;
+}
+.skills .row .tools .jenis-tool h5 {
+  user-select: none;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.skills .row .tools .jenis-tool p {
+  user-select: none;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+/* Skill Section End */
+
+/* Footer Start */
+footer {
+  padding: 0 7%;
+  background-color: #000;
+}
+footer .row {
+  padding: 3rem 0;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+footer .row h5 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+footer .row p {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+footer img {
+  width: 10rem;
+}
+
+.footer .sosmed {
+  display: flex;
+  flex-direction: row;
+  gap: 1.3rem;
+}
+
+footer .sosmed img {
+  margin: 2rem 0;
+  width: 2rem;
+  filter: grayscale(90%);
+}
+
+footer .sosmed img:hover {
+  filter: grayscale(0%);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+/* Footer End */
+
+/* media queri */
+
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  h1 .title {
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: 13px;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-top: 2rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 25rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+  .navbar .navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .navbar .search-form {
+    width: 90%;
+    right: 2rem;
+  }
+
+  .hero {
+    height: 100vh;
+  }
+  .hero .row .content {
+    padding: 2rem 2%;
+    margin-left: 0%;
+    /* background-color: #614daa; */
+    /* max-width: 79rem; */
+    width: 60%;
+    text-align: start;
+  }
+
+  .hero .row .content h1 {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    line-height: 1;
+    margin-bottom: 2rem;
+  }
+
+  .hero .row .content h1 span {
+    color: var(--primary);
+  }
+
+  .hero .row .content p {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    line-height: 1.4;
+    font-weight: 200;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.514);
+    /* mix-blend-mode: difference; */
+  }
+
+  .hero .row .content a {
+    margin-top: 2rem;
+    margin-right: 2rem;
+  }
+
+  .hero .row .profil {
+    /* background-color: red; */
+    margin-top: 3rem;
+    width: 40%;
+    display: flex; /* Menggunakan Flexbox dalam elemen profil juga */
+    justify-content: center; /* Menempatkan konten di tengah secara horizontal */
+    align-items: center; /* Menempatkan konten di tengah secara vertikal */
+  }
+
+  .hero .row .profil img {
+    width: 25.375rem;
+    height: 25.375rem;
+  }
+  .pseudo::before {
+    content: ''; /* Membuat pseudo-elemen tanpa teks */
+    position: absolute; /* Memungkinkan pseudo-elemen diposisikan secara absolut */
+    width: 0; /* Lebar garis vertikal */
+    height: 0; /* Tinggi garis vertikal mengikuti tinggi kontainer */
+  }
+  .pseudo::after {
+    content: ''; /* Membuat pseudo-elemen tanpa teks */
+    position: absolute; /* Memungkinkan pseudo-elemen diposisikan secara absolut */
+    width: 0; /* Lebar garis vertikal */
+    height: 0; /* Tinggi garis vertikal mengikuti tinggi kontainer */
+  }
+
+  /* services section start */
+  .services {
+    padding: 0 7%;
+  }
+  .services .row {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .services .row .col-left {
+    margin-top: -5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  .services .row .col-left a {
+    margin-top: -1rem;
+  }
+
+  .services .row .col-1 {
+    margin: 0;
+    padding: 0;
+  }
+  .services .row .col-2 {
+    margin: 0;
+    padding: 0;
+  }
+  .services .grid-service-a .card {
+    width: 100%;
+    height: 50%;
+  }
+  .services .grid-service-b .card {
+    width: 100%;
+    height: 50%;
+  }
+
+  /* project section start */
+
+  /* project section end */
+
+  /* about section start */
+  .about .row {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5rem;
+    height: 50%;
+  }
+  .about .row .profil img {
+    object-fit: cover; /* Menyesuaikan gambar agar tidak terdistorsi */
+    position: relative; /* Memastikan gambar berada di atas pseudo-elemen */
+    z-index: 1; /* Mengatur z-index lebih tinggi dari pseudo-elemen */
+    border-radius: 20px 0 20px 0;
+    width: 100%;
+  }
+
+  .about .row .profil::before {
+    content: ''; /* Membuat pseudo-elemen kosong */
+    position: absolute; /* Memungkinkan positioning absolut */
+    margin-top: 2rem; /* Menggeser border ke atas */
+    margin-left: 2rem; /* Menggeser border ke kiri */
+    border: 0.2rem solid var(--primary); /* Border putih */
+    border-radius: 30px 0 30px 0; /* Jika Anda ingin border dengan sudut melengkung */
+    z-index: -1; /* Menempatkan pseudo-elemen di belakang gambar */
+  }
+
+  .about .row .profil {
+    order: 2;
+    margin: 2rem 0;
+    align-self: start;
+  }
+  .about .row .desc {
+    order: 1;
+    align-self: start;
+  }
+  /* about section end */
+
+  /* services section end  */
+}
+
+/* mobile phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+  .hero .row {
+    flex-wrap: wrap;
+    height: 100vh;
+  }
+
+  .hero .row .content {
+    order: 2;
+    padding: 2rem 1%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .hero .row .profil {
+    margin-top: 10rem;
+    width: 100%;
+    height: 40%;
+    display: flex; /* Menggunakan Flexbox dalam elemen profil juga */
+    justify-content: center; /* Menempatkan konten di tengah secara horizontal */
+    align-items: center; /* Menempatkan konten di tengah secara vertikal */
+  }
+
+  .hero .row .circle {
+    display: none;
+  }
+
+  .hero .row .content .line {
+    display: none;
+  }
+
+  .services .row {
+    flex-wrap: wrap;
+  }
+
+  .services .row .col-1 {
+    /* background-color: green; */
+    margin-top: 0;
+    padding: 0;
+    width: 19rem;
+  }
+  .services .row .col-2 {
+    /* background-color:yellow; */
+    padding: 0;
+    width: 19rem;
+  }
+  /* Services Section end */
+
+  /* project section start */
+
+  .project .row {
+    height: 100%;
+  }
+  .project .row .container .item {
+    width: 100%;
+  }
+
+  /* project section end */
+
+  /* about section start */
+
+  .about {
+    height: 50%;
+  }
+  .about .row {
+    margin-top: 15rem;
+  }
+  .about .profil img {
+    display: none;
+  }
+
+  .about .row .profil::before {
+    display: none;
+  }
+
+  /* about section end */
+
+  /* skill section start */
+  .skills .row .btn-skills {
+    justify-content: center;
+  }
+  /* skill section end */
+}
