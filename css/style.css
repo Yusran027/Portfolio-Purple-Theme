@@ -266,9 +266,9 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 8px; /* Lebar titik */
-  height: 8px; /* Tinggi titik */
-  background-color: #44239e; /* Warna titik */
+  width: 1rem; /* Lebar titik */
+  height: 1rem; /* Tinggi titik */
+  background-color: #ffffff; /* Warna titik */
   border-radius: 50%;
   transform-origin: 0 0; /* Titik rotasi */
   animation: rotate 4s linear infinite;
@@ -392,6 +392,7 @@ body {
 
 .card:hover {
   cursor: default;
+  transform: scale(1.1);
 }
 
 .card .img-1 {
@@ -677,10 +678,11 @@ body {
   width: 0.2rem;
   margin-left: -2.5rem;
   margin-top: 1rem;
-  height: 100vh;
+  height: 100%;
   background-color: white;
   display: flex;
   align-self: start;
+  z-index: -1;
 }
 
 .circle-1,
@@ -839,19 +841,23 @@ footer .row {
   padding: 3rem 0;
   display: flex;
   position: relative;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 footer .row h5 {
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
-footer .row p {
+footer .row a {
   font-size: 1rem;
   margin: 1rem 0;
+  text-decoration: none; /* Menghilangkan garis bawah */
+  color: inherit; /* Warna teks sesuai dengan elemen induk */
+  outline: none; /* Menghilangkan outline pada fokus */
+  cursor: pointer; /* Menambahkan pointer untuk menunjukkan elemen bisa diklik */
 }
 
 footer img {
-  width: 10rem;
+  width: 15rem;
 }
 
 .footer .sosmed {
@@ -870,6 +876,17 @@ footer .sosmed img:hover {
   filter: grayscale(0%);
   cursor: pointer;
   transform: scale(1.1);
+}
+
+footer .menu,
+.eksplore {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .contact p{
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
 }
 /* Footer End */
 
@@ -1181,9 +1198,9 @@ footer .sosmed img:hover {
   /* about section end */
 
   /* skill section start */
-.skills .row .btn-skills{
-  justify-content: center;
-}
+  .skills .row .btn-skills {
+    justify-content: center;
+  }
 
   /* .skills .row .tools{
     gap: 0;
