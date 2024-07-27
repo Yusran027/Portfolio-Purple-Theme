@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Spaceroom</title>
+    <title>Portfolio Ungu</title>
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -41,9 +41,11 @@
           <h2>Hello There, I’m</h2>
           <h1><span>YUSRAN HALIQ LARISI</span></h1>
           <p>Junior Frontend | Graphic Designer | Video Editor | Live Streaming</p>
-          <h4>Welcome to My Personal Website. 👋</h4>
+          <h4 class="typing-animation">
+            <span class="typed-text">Welcome to My Personal Website.👋</span>
+          </h4>
           <div class="button">
-            <a href="#" class="btn-primary">Contact Me</a>
+            <a id="openModalBtn" class="btn-primary">Contact Me</a>
             <a href="#" class="btn-secondary">Download CV</a>
           </div>
         </div>
@@ -57,7 +59,7 @@
     <section class="services" id="services">
       <div class="row">
         <div class="col-left">
-          <h2><span>&lt;</span>My <span>Services&gt;</span></h2>
+          <h2><span>&lt;My </span>Services<span>&gt;</span></h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore at molestiae explicabo dolor ea doloribus, id distinctio sunt amet odio porro, rerum officia? Quibusdam quaerat libero similique. Impedit numquam perspiciatis sequi
             vitae quam laudantium!
@@ -328,6 +330,37 @@
       </div>
     </section>
 
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="contact-form">
+          <h2>Just say Hello !</h2>
+          <p>Beri tahu saya siapa anda!.</p>
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="your name" />
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="your email" />
+          </div>
+          <div class="form-message">
+            <textarea id="message" name="message" placeholder="your message"></textarea>
+          </div>
+          <a href="#" class="btn-primary">Send</a>
+        </div>
+        <div class="contact-info">
+          <span class="close">&times;</span>
+          <h2>Contact Information</h2>
+          <p>Luwuk, Sulawesi Tengah</p>
+          <p>Call me: +62 856 9625 2046</p>
+          <h2>Follow Me</h2>
+          <div class="social">
+            <p>Instagram</p>
+            <p>LinkedIn</p>
+            <p>Github</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer>
       <div class="footer">
@@ -381,26 +414,6 @@
     </footer>
 
     <!-- Scripts -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const items = document.querySelectorAll('.project .row .container .item');
-        const observer = new IntersectionObserver(
-          (entries, observer) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-                observer.unobserve(entry.target);
-              }
-            });
-          },
-          { threshold: 0.1 }
-        );
-
-        items.forEach((item) => {
-          observer.observe(item);
-        });
-      });
-    </script>
     <script>
       feather.replace();
     </script>
