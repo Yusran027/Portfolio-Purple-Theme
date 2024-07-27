@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Spaceroom</title>
 
-    <!-- Font start -->
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
-    <!-- Font end -->
+
+    <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <nav class="navbar">
-      <a href="#" class="navbar-logo">Portfolio <span> YHL </span>. </a>
+      <a href="#" class="navbar-logo">Portfolio <span>YHL</span></a>
       <div class="navbar-nav">
         <a href="#home">Home</a>
         <a href="#services">My Services</a>
@@ -23,41 +26,38 @@
         <a href="#about">About Me</a>
         <a href="#skills">Skills</a>
       </div>
-
       <div class="navbar-extra">
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
     </nav>
 
-    <!-- hero section start -->
+    <!-- Hero Section -->
     <section class="hero" id="home">
       <div class="pseudo"></div>
       <div class="row">
         <div class="content">
           <div class="circle"></div>
           <div class="line"></div>
-          <h2>Hallo There, I’m</h2>
+          <h2>Hello There, I’m</h2>
           <h1><span>YUSRAN HALIQ LARISI</span></h1>
           <p>Junior Frontend | Graphic Designer | Video Editor | Live Streaming</p>
           <h4>Welcome to My Personal Website. 👋</h4>
-          <a href="#" class="btn-primary">Contact Me</a>
-          <a href="#" class="btn-secondary">Download CV</a>
+          <div class="button">
+            <a href="#" class="btn-primary">Contact Me</a>
+            <a href="#" class="btn-secondary">Download CV</a>
+          </div>
         </div>
         <div class="profil">
-          <div class="circle-container">
-            <img src="assets/img/profil.jpg" alt="" />
-            <div class="laser"></div>
-          </div>
+          <img src="assets/img/profil.jpg" alt="Profile" />
         </div>
       </div>
     </section>
-    <!-- hero section end -->
 
-    <!-- services section start -->
-    <div class="services" id="services">
+    <!-- Services Section -->
+    <section class="services" id="services">
       <div class="row">
         <div class="col-left">
-          <h2><span><</span>My <span>Services></span></h2>
+          <h2><span>&lt;</span>My <span>Services&gt;</span></h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore at molestiae explicabo dolor ea doloribus, id distinctio sunt amet odio porro, rerum officia? Quibusdam quaerat libero similique. Impedit numquam perspiciatis sequi
             vitae quam laudantium!
@@ -67,12 +67,12 @@
         <div class="col-1">
           <div class="grid-service-a">
             <div class="card">
-              <img class="img-1" src="assets/icon/icon-develop.svg" alt="icon develop" />
+              <img class="img-1" src="assets/icon/icon-develop.svg" alt="Frontend Development" />
               <h2>Frontend</h2>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, maiores.</p>
             </div>
             <div class="card">
-              <img class="img-1" src="assets/icon/icon-design.svg" alt="icon Design" />
+              <img class="img-1" src="assets/icon/icon-design.svg" alt="Graphic Design" />
               <h2>Design Graphic</h2>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, maiores.</p>
             </div>
@@ -81,25 +81,24 @@
         <div class="col-2">
           <div class="grid-service-b">
             <div class="card">
-              <img class="img-1" src="assets/icon/icon-video_editting.svg" alt="icon Video" />
+              <img class="img-1" src="assets/icon/icon-video_editting.svg" alt="Video Editing" />
               <h2>Video Editing</h2>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, maiores.</p>
             </div>
             <div class="card">
-              <img class="img-1" src="assets/icon/icon-live.svg" alt="icon live" />
+              <img class="img-1" src="assets/icon/icon-live.svg" alt="Live Streaming" />
               <h2>Live Streaming</h2>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, maiores.</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- services section End -->
+    </section>
 
-    <!-- project Section start -->
+    <!-- Project Section -->
     <section class="project" id="project">
       <div class="row">
-        <h2><span>< My</span> Project<span> ></span></h2>
+        <h2><span>&lt; My</span> Project<span>&gt;</span></h2>
         <div class="categori">
           <a href="#" class="active">All</a>
           <a href="#">Frontend</a>
@@ -109,51 +108,49 @@
         </div>
         <div class="container">
           <figure class="item">
-            <img src="assets/img/frontend.jpg" alt="live.jpg" />
+            <img src="assets/img/frontend.jpg" alt="Frontend Project" />
             <figcaption>
               <h3>Frontend</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <img src="assets/icon/open.svg" alt="buka image" />
+              <img src="assets/icon/open.svg" alt="Open Project" />
             </figcaption>
           </figure>
           <figure class="item">
-            <img src="assets/img/design.jpg" alt="live.jpg" />
+            <img src="assets/img/design.jpg" alt="Graphic Design Project" />
             <figcaption>
               <h3>Design Graphic</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <img src="assets/icon/open.svg" alt="buka image" />
+              <img src="assets/icon/open.svg" alt="Open Project" />
             </figcaption>
           </figure>
           <figure class="item">
-            <img src="assets/img/editing-video.jpg" alt="live.jpg" />
+            <img src="assets/img/editing-video.jpg" alt="Video Editing Project" />
             <figcaption>
               <h3>Video Editing</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <img src="assets/icon/open.svg" alt="buka image" />
+              <img src="assets/icon/open.svg" alt="Open Project" />
             </figcaption>
           </figure>
           <figure class="item">
-            <img src="assets/img/streaming.jpg" alt="live.jpg" />
+            <img src="assets/img/streaming.jpg" alt="Live Streaming Project" />
             <figcaption>
               <h3>Live Streaming</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <img src="assets/icon/open.svg" alt="buka image" />
+              <img src="assets/icon/open.svg" alt="Open Project" />
             </figcaption>
           </figure>
         </div>
       </div>
     </section>
 
-    <!-- project Section end -->
-
-    <!-- about section start -->
+    <!-- About Section -->
     <section class="about" id="about">
       <div class="row">
         <div class="profil">
-          <img src="assets/img/about.jpg" alt="foto" />
+          <img src="assets/img/about.jpg" alt="About Me" />
         </div>
         <div class="desc">
-          <h2><span>< </span>About <span>Me></span></h2>
+          <h2><span>&lt;</span>About <span>Me&gt;</span></h2>
           <p>
             I am a graduate of Bachelor of Science in Computer Engineering, specializing in Information Technology, with over 1 year of experience in Public Information and Communication. I possess skills in technical problem-solving,
             software and hardware management. I am capable of working independently as well as in a team, with strong communication skills and a high dedication to career development in the field of Information.
@@ -162,185 +159,190 @@
         </div>
       </div>
     </section>
-    <!-- about section end -->
 
-    <!-- skill section start -->
+    <!-- Skills Section -->
     <section class="skills" id="skills">
       <div class="row">
-        <h2><span>< </span> Skills <span>></span></h2>
+        <h2><span>&lt;</span> Skills <span>&gt;</span></h2>
         <div class="btn-skills">
           <a href="#" class="active">Hard Skill</a>
-          <a href="#">Soft Skill Skill</a>
+          <a href="#">Soft Skill</a>
         </div>
-          <div class="container">
-            <h3><span class="circle-1"> <a href="" class="vertical"></a></span>Front End</h3>
-            <div class="tools">
-              <div class="isi-tool">
-                <img src="assets/tools/html.svg" alt="image" />
-                <div class="jenis-tool">
-                  <h5>HTML 5</h5>
-                  <p>Tool</p>
-                </div>
-              </div>
-              <div class="isi-tool">
-                <img src="assets/tools/css.svg" alt="image" />
-                <div class="jenis-tool">
-                  <h5>CSS 3</h5>
-                  <p>Tool</p>
-                </div>
-              </div>
-              <div class="isi-tool">
-                <img src="assets/tools/javascript.svg" alt="image" />
-                <div class="jenis-tool">
-                  <h5>javascript</h5>
-                  <p>Tool</p>
-                </div>
-              </div>
-              <div class="isi-tool">
-                <img src="assets/tools/bootstrap.svg" alt="image" />
-                <div class="jenis-tool">
-                  <h5>Bootstrap</h5>
-                  <p>Framework</p>
-                </div>
-              </div>
-              <div class="isi-tool">
-                <img src="assets/tools/angular.svg" alt="image" />
-                <div class="jenis-tool">
-                  <h5>Angular</h5>
-                  <p>Framework</p>
-                </div>
+        <div class="container">
+          <h3>
+            <span class="circle-1"><a href="" class="vertical"></a></span>Front End
+          </h3>
+          <div class="tools">
+            <!-- Frontend Tools -->
+            <div class="isi-tool">
+              <img src="assets/tools/html.svg" alt="HTML5" />
+              <div class="jenis-tool">
+                <h5>HTML 5</h5>
+                <p>Tool</p>
               </div>
             </div>
-            <h3><span class="circle-2"></span>Design Graphic</h3>
-            <div class="tools">
-              <div class="isi-tool">
-                <img src="assets/tools/illustrator.svg" alt="image" />
-                <div class="jenis-tool">
-                  <h5>Adobe Illustrator</h5>
-                  <p>Tool</p>
-                </div>
-              </div>
-              <div class="isi-tool">
-                <img src="assets/tools/xd.svg" alt="image" />
-                <div class="jenis-tool">
-                  <h5>Adobe XD</h5>
-                  <p>Tool</p>
-                </div>
-              </div>
-              <div class="isi-tool">
-                <img src="assets/tools/photoshop.svg" alt="image" />
-                <div class="jenis-tool">
-                  <h5>Adobe Photoshop</h5>
-                  <p>Tool</p>
-                </div>
-              </div>
-              <div class="isi-tool">
-                <img src="assets/tools/canva.svg" alt="image" />
-                <div class="jenis-tool">
-                  <h5>Canva</h5>
-                  <p>Tool</p>
-                </div>
-              </div>
-              <div class="isi-tool">
-                <img src="assets/tools/figma.svg" alt="image" />
-                <div class="jenis-tool">
-                  <h5>Figma</h5>
-                  <p>Tool</p>
-                </div>
+            <div class="isi-tool">
+              <img src="assets/tools/css.svg" alt="CSS3" />
+              <div class="jenis-tool">
+                <h5>CSS 3</h5>
+                <p>Tool</p>
               </div>
             </div>
-            <h3><span class="circle-3"></span>Video Editing</h3>
-            <div class="tools">
-              <div class="isi-tool">
-                <img src="assets/tools/premiere-pro.svg" alt="image" />
-                <div class="jenis-tool">
-                  <h5>Adobe premierePro</h5>
-                  <p>Tool</p>
-                </div>
-              </div>
-              <div class="isi-tool">
-                <img src="assets/tools/filmora.svg" alt="image" />
-                <div class="jenis-tool">
-                  <h5>Filmora</h5>
-                  <p>Tool</p>
-                </div>
-              </div>
-              <div class="isi-tool">
-                <img src="assets/tools/capcut.svg" alt="image" />
-                <div class="jenis-tool">
-                  <h5>Capcut</h5>
-                  <p>Tool</p>
-                </div>
+            <div class="isi-tool">
+              <img src="assets/tools/javascript.svg" alt="JavaScript" />
+              <div class="jenis-tool">
+                <h5>JavaScript</h5>
+                <p>Tool</p>
               </div>
             </div>
-            <h3><span class="circle-4"></span>Live Streaming</h3>
-            <div class="tools">
-              <div class="isi-tool">
-                <img src="assets/tools/vMix.svg" alt="image" />
-                <div class="jenis-tool">
-                  <h5>vMix</h5>
-                  <p>Tool</p>
-                </div>
-              </div>
-              <div class="isi-tool">
-                <img src="assets/tools/obs.svg" alt="image" />
-                <div class="jenis-tool">
-                  <h5>OBS</h5>
-                  <p>Tool</p>
-                </div>
+            <div class="isi-tool">
+              <img src="assets/tools/bootstrap.svg" alt="Bootstrap" />
+              <div class="jenis-tool">
+                <h5>Bootstrap</h5>
+                <p>Framework</p>
               </div>
             </div>
-            <h3><span class="circle-5"></span>Data Analytic</h3>
-            <div class="tools">
-              <div class="isi-tool">
-                <img src="assets/tools/data-studio.svg" alt="image" />
-                <div class="jenis-tool">
-                  <h5>Google Datastudio</h5>
-                  <p>Tool</p>
-                </div>
-              </div>
-              <div class="isi-tool">
-                <img src="assets/tools/looker.svg" alt="image" />
-                <div class="jenis-tool">
-                  <h5>Loker Studio</h5>
-                  <p>Tool</p>
-                </div>
-              </div>
-              <div class="isi-tool">
-                <img src="assets/tools/microsoft.svg" alt="image" />
-                <div class="jenis-tool">
-                  <h5>Microsoft Office</h5>
-                  <p>Tool</p>
-                </div>
-              </div>
-              <div class="isi-tool">
-                <img src="assets/tools/sheet.svg" alt="image" />
-                <div class="jenis-tool">
-                  <h5>Spread Sheet</h5>
-                  <p>Tool</p>
-                </div>
+            <div class="isi-tool">
+              <img src="assets/tools/angular.svg" alt="Angular" />
+              <div class="jenis-tool">
+                <h5>Angular</h5>
+                <p>Framework</p>
               </div>
             </div>
           </div>
+          <h3><span class="circle-2"></span>Design Graphic</h3>
+          <div class="tools">
+            <!-- Graphic Design Tools -->
+            <div class="isi-tool">
+              <img src="assets/tools/illustrator.svg" alt="Adobe Illustrator" />
+              <div class="jenis-tool">
+                <h5>Adobe Illustrator</h5>
+                <p>Tool</p>
+              </div>
+            </div>
+            <div class="isi-tool">
+              <img src="assets/tools/xd.svg" alt="Adobe XD" />
+              <div class="jenis-tool">
+                <h5>Adobe XD</h5>
+                <p>Tool</p>
+              </div>
+            </div>
+            <div class="isi-tool">
+              <img src="assets/tools/photoshop.svg" alt="Adobe Photoshop" />
+              <div class="jenis-tool">
+                <h5>Adobe Photoshop</h5>
+                <p>Tool</p>
+              </div>
+            </div>
+            <div class="isi-tool">
+              <img src="assets/tools/canva.svg" alt="Canva" />
+              <div class="jenis-tool">
+                <h5>Canva</h5>
+                <p>Tool</p>
+              </div>
+            </div>
+            <div class="isi-tool">
+              <img src="assets/tools/figma.svg" alt="Figma" />
+              <div class="jenis-tool">
+                <h5>Figma</h5>
+                <p>Tool</p>
+              </div>
+            </div>
+          </div>
+          <h3><span class="circle-3"></span>Video Editing</h3>
+          <div class="tools">
+            <!-- Video Editing Tools -->
+            <div class="isi-tool">
+              <img src="assets/tools/premiere-pro.svg" alt="Adobe Premiere Pro" />
+              <div class="jenis-tool">
+                <h5>Adobe Premiere Pro</h5>
+                <p>Tool</p>
+              </div>
+            </div>
+            <div class="isi-tool">
+              <img src="assets/tools/filmora.svg" alt="Filmora" />
+              <div class="jenis-tool">
+                <h5>Filmora</h5>
+                <p>Tool</p>
+              </div>
+            </div>
+            <div class="isi-tool">
+              <img src="assets/tools/capcut.svg" alt="Capcut" />
+              <div class="jenis-tool">
+                <h5>Capcut</h5>
+                <p>Tool</p>
+              </div>
+            </div>
+          </div>
+          <h3><span class="circle-4"></span>Live Streaming</h3>
+          <div class="tools">
+            <!-- Live Streaming Tools -->
+            <div class="isi-tool">
+              <img src="assets/tools/vMix.svg" alt="vMix" />
+              <div class="jenis-tool">
+                <h5>vMix</h5>
+                <p>Tool</p>
+              </div>
+            </div>
+            <div class="isi-tool">
+              <img src="assets/tools/obs.svg" alt="OBS" />
+              <div class="jenis-tool">
+                <h5>OBS</h5>
+                <p>Tool</p>
+              </div>
+            </div>
+          </div>
+          <h3><span class="circle-5"></span>Data Analytic</h3>
+          <div class="tools">
+            <!-- Data Analytic Tools -->
+            <div class="isi-tool">
+              <img src="assets/tools/data-studio.svg" alt="Google Data Studio" />
+              <div class="jenis-tool">
+                <h5>Google Data Studio</h5>
+                <p>Tool</p>
+              </div>
+            </div>
+            <div class="isi-tool">
+              <img src="assets/tools/looker.svg" alt="Looker Studio" />
+              <div class="jenis-tool">
+                <h5>Looker Studio</h5>
+                <p>Tool</p>
+              </div>
+            </div>
+            <div class="isi-tool">
+              <img src="assets/tools/microsoft.svg" alt="Microsoft Office" />
+              <div class="jenis-tool">
+                <h5>Microsoft Office</h5>
+                <p>Tool</p>
+              </div>
+            </div>
+            <div class="isi-tool">
+              <img src="assets/tools/sheet.svg" alt="Spreadsheet" />
+              <div class="jenis-tool">
+                <h5>Spreadsheet</h5>
+                <p>Tool</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- skill section end -->
 
-    <!-- footer start -->
+    <!-- Footer -->
     <footer>
       <div class="footer">
         <div class="row">
           <div class="logo">
-            <img src="assets/YHL.png" alt="" />
+            <img src="assets/YHL.png" alt="Logo" />
             <div class="sosmed">
               <a href="https://www.instagram.com/jus_tillustration/" target="_blank">
                 <img src="assets/icon/instagram (1).png" alt="Instagram Profile" />
               </a>
               <a href="https://dribbble.com/Yusran21#" target="_blank">
-                <img src="assets/icon/dribble.png" alt="Dribble Profile" />
+                <img src="assets/icon/dribble.png" alt="Dribbble Profile" />
               </a>
               <a href="https://linkedin.com/in/yusran-haliq-larisi" target="_blank">
-                <img src="assets/icon/linkedin.png" alt="linkedin Profile" />
+                <img src="assets/icon/linkedin.png" alt="LinkedIn Profile" />
               </a>
               <a href="https://github.com/Yusran027/" target="_blank">
                 <img src="assets/icon/github.png" alt="Github Profile" />
@@ -348,36 +350,37 @@
             </div>
           </div>
           <div class="eksplore">
-            <h5>Eksplore</h5>
-            <a>Frontend</a>
-            <a>Design Graahic</a>
-            <a>Video Editing</a>
-            <a>Live Streaming</a>
-            <a>Data Analytic</a>
+            <h5>Explore</h5>
+            <a href="#">Frontend</a>
+            <a href="#">Design Graphic</a>
+            <a href="#">Video Editing</a>
+            <a href="#">Live Streaming</a>
+            <a href="#">Data Analytic</a>
           </div>
           <div class="menu">
             <h5>Menu</h5>
             <a href="#home">Home</a>
             <a href="#services">My Services</a>
-            <a href="#project">My project</a>
+            <a href="#project">My Project</a>
             <a href="#about">About Me</a>
             <a href="#skills">Skills</a>
           </div>
           <div class="contact">
             <h5>Contact</h5>
             <p>Call Me</p>
-            <a>+62 956 9625 2046</a>
+            <a href="tel:+6295696252046">+62 956 9625 2046</a>
             <p>Email</p>
-            <a>yh.larisi@gmail.com</a>
+            <a href="mailto:yh.larisi@gmail.com">yh.larisi@gmail.com</a>
           </div>
         </div>
       </div>
       <div class="copyright">
-        <img src="assets/img/map.png" alt="" />
+        <img src="assets/img/map.png" alt="Map" />
         <p>Copyright &#169; 2024 YHL</p>
       </div>
     </footer>
-    <!-- footer end -->
+
+    <!-- Scripts -->
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         const items = document.querySelectorAll('.project .row .container .item');

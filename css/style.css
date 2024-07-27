@@ -16,6 +16,13 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: 'roboto', 'poppins';
+  background-color: var(--bg);
+  color: #fff;
+  /* min-height: 3000px; */
+}
+
 h1 .title {
   font-size: 2rem;
   font-weight: 100;
@@ -31,31 +38,6 @@ h4 {
   font-size: 2.2rem;
   font-weight: 500;
 }
-
-/* Pseudo-elemen untuk ornamen bulat */
-/* .pseudo::before {
-  content: ''; 
-  position: absolute; 
-  top: 30%; 
-  left: 5%; 
-  width: 4px; 
-  height: 26rem;
-  background: linear-gradient(to bottom, var(--primary), rgba(255, 0, 0, 0) 100%); 
-  z-index: -1; 
-}
-
-.pseudo::after {
-  content: '';
-  position: absolute; 
-  top: 30%;
-  left: 4.4%; 
-  width: 20px; 
-  height: 20px; 
-  background: radial-gradient(circle, var(--primary) 100%, transparent 100%); 
-  border-radius: 50%;
-  z-index: -1; 
-} */
-/* Pseudo-elemen untuk ornamen end */
 
 .btn-primary {
   background: linear-gradient(to bottom, #915cf9, #563693);
@@ -101,14 +83,6 @@ h4 {
   color: #ffffff; /* Warna teks saat tombol dihover */
   border: var(--primary);
 }
-
-body {
-  font-family: 'roboto', 'poppins';
-  background-color: var(--bg);
-  color: #fff;
-  /* min-height: 3000px; */
-}
-
 /* navbar start */
 .navbar {
   display: flex;
@@ -171,23 +145,20 @@ body {
 #hamburger-menu {
   display: none;
 }
-
 /* navbar search end */
 
 /* hero section start */
-
 .hero {
-  height: 100vh;
   width: 100%;
   padding: 0 7%;
   position: relative;
+  height: 100vh;
 }
 
 .hero .row {
   display: flex; /* Mengatur elemen sebagai flex container */
   justify-content: start; /* Memusatkan elemen horizontal */
   align-items: center; /* Memusatkan elemen vertikal */
-  /* flex-wrap: wrap ; */
   height: 100vh;
 }
 
@@ -195,25 +166,6 @@ body {
   width: 60%;
   text-align: start;
   position: relative;
-}
-
-.hero .row .circle {
-  content: '';
-  position: absolute;
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-left: -3.5rem;
-  background: radial-gradient(circle, var(--primary) 100%, transparent 100%);
-  border-radius: 50%;
-}
-
-.hero .row .content .line {
-  content: '';
-  position: absolute;
-  width: 0.5rem;
-  height: 26rem;
-  margin-left: -3rem;
-  background: linear-gradient(to bottom, var(--primary), rgba(255, 0, 0, 0) 100%);
 }
 
 .hero .row .content h1 {
@@ -236,53 +188,36 @@ body {
   /* mix-blend-mode: difference; */
 }
 
-.hero .row .content a {
-  margin-top: 2rem;
-  margin-right: 2rem;
+.hero .row .content .button {
+  margin: 2rem 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.hero .row .circle {
+  content: '';
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: -3.5rem;
+  background: radial-gradient(circle, var(--primary) 100%, transparent 100%);
+  border-radius: 50%;
+}
+
+.hero .row .content .line {
+  content: '';
+  position: absolute;
+  width: 0.5rem;
+  height: 26rem;
+  margin-left: -3rem;
+  background: linear-gradient(to bottom, var(--primary), rgba(255, 0, 0, 0) 100%);
 }
 
 .hero .row .profil {
-  /* background-color: red; */
   width: 40%;
-  /* height: 100vh; */
   display: flex; /* Menggunakan Flexbox dalam elemen profil juga */
   justify-content: center; /* Menempatkan konten di tengah secara horizontal */
   align-items: center; /* Menempatkan konten di tengah secara vertikal */
-}
-
-.hero .row .profil .circle-container {
-  position: relative;
-  width: 30.375rem; /* Sesuaikan ukuran */
-  height: 30.375rem; /* Sesuaikan ukuran */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 4px solid var(--primary); /* Border ungu */
-  border-radius: 50%; /* Membuat bentuk lingkaran */
-}
-
-/* Laser animasi */
-.hero .row .profil .laser {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 1rem; /* Lebar titik */
-  height: 1rem; /* Tinggi titik */
-  background-color: #ffffff; /* Warna titik */
-  border-radius: 50%;
-  transform-origin: 0 0; /* Titik rotasi */
-  animation: rotate 4s linear infinite;
-  box-shadow: 0 0 10px 1px #6035b7; /* Efek ekor */
-  z-index: 1;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg) translate(15.1875rem) translate(-50%, -50%);
-  }
-  100% {
-    transform: rotate(360deg) translate(15.1875rem) translate(-50%, -50%);
-  }
 }
 
 .hero .row .profil img {
@@ -294,47 +229,36 @@ body {
   object-fit: cover;
   box-shadow: 0 0px 20px var(--primary); /* Warna, ukuran, dan spread bayangan */
 }
-
 /* hero section end */
-
 /* Services Section Start */
+
 .services {
   width: 100%;
   padding: 0 7%;
   position: relative;
 }
+
 .services .row {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
+
 .services .row .col-left {
   /* background-color: red; */
   width: 70%;
   line-height: 2rem;
 }
+
 .services .row .col-left span {
   color: var(--primary);
 }
+
 .services .row .col-left p {
   font-size: 1.5rem;
-  margin: 2rem 0 2rem 0;
+  margin: 2rem 0;
   line-height: 3rem;
-}
-
-.services .row .col-1 {
-  /* background-color: green; */
-  margin-top: 0;
-  padding: 0;
-  width: 20rem;
-}
-
-.services .row .col-2 {
-  /* background-color:yellow; */
-  margin-top: 6rem;
-  padding: 0;
-  width: 20rem;
 }
 
 .grid-service-a,
@@ -346,6 +270,12 @@ body {
   margin: 0px; /* Memusatkan grid container secara horizontal */
   justify-content: center; /* Memusatkan kartu secara horizontal */
   align-items: center; /* Memusatkan kartu secara vertikal */
+}
+
+.col-1 {
+  margin-top: 0;
+  padding: 0;
+  width: 20rem;
 }
 
 .col-1 .card {
@@ -364,6 +294,13 @@ body {
   transform: translateY(-50px); /* Start with the card above its final position */
   animation: slideDown 1.4s ease-out forwards; /* Apply animation */
 }
+
+.col-2 {
+  margin-top: 6rem;
+  padding: 0;
+  width: 20rem;
+}
+
 .col-2 .card {
   height: 20rem;
   width: 20rem;
@@ -389,8 +326,12 @@ body {
   }
 }
 
-.card:hover {
+.card {
   cursor: default;
+  transition: transform 500ms ease-out;
+}
+
+.card:hover {
   transform: scale(1.1);
 }
 
@@ -413,13 +354,14 @@ body {
 }
 
 /* Services Section end */
-
 /* project section start */
+
 .project {
   width: 100%;
   padding: 0 7%;
   position: relative;
 }
+
 .project .row {
   display: flex;
   align-items: center;
@@ -439,7 +381,6 @@ body {
   flex-wrap: wrap;
   gap: 1rem; /* Menambahkan gap antar tombol */
   justify-content: center; /* Memusatkan tombol secara horizontal */
-  /* flex-wrap: wrap; */
 }
 
 .project .row .categori a {
@@ -460,6 +401,7 @@ body {
 .project .row .categori a:hover {
   background-color: var(--primary);
 }
+
 .project .row .categori .active {
   background-color: var(--primary);
 }
@@ -491,11 +433,6 @@ body {
   transform: translateY(0); /* Bergerak ke posisi akhir */
 }
 
-.project .row .container .item.show {
-  opacity: 1;
-  transform: translateY(0); /* Move to the final position */
-}
-
 .project .row .container .item.show:nth-child(1) {
   transition-delay: 0s;
 }
@@ -514,8 +451,6 @@ body {
 
 .project .row .container .item:hover {
   transform: scale(1.04); /* Membesarkan elemen saat di-hover */
-  /* transition: 500ms; */
-  /* filter: brightness(1); */
 }
 
 .project .row .container .item img {
@@ -572,8 +507,8 @@ body {
 }
 
 /* project section end */
-
 /* about section start */
+
 .about {
   /* min-height: 100vh; */
   padding: 0 7%;
@@ -586,6 +521,30 @@ body {
   height: 100vh;
   flex-direction: row; /* Ubah dari column ke row */
   gap: 3rem;
+}
+
+.about .row .desc {
+  margin-top: 1rem; /* Tambahkan margin atas agar teks tidak menempel pada gambar */
+  display: flex;
+  align-items: start;
+  align-self: center;
+  flex-direction: column;
+  justify-content: center;
+  order: 2;
+}
+
+.about .row .desc h2 {
+  padding: 0rem 0rem 1rem 0rem;
+}
+
+.about .row .desc span {
+  color: var(--primary);
+}
+
+.about .row .desc p {
+  font-size: 1.5rem;
+  margin: 2rem 0 2rem 0;
+  line-height: 3rem;
 }
 
 .about .row .profil {
@@ -617,43 +576,6 @@ body {
   z-index: -1; /* Menempatkan pseudo-elemen di belakang gambar */
 }
 
-.about .row .desc {
-  margin-top: 1rem; /* Tambahkan margin atas agar teks tidak menempel pada gambar */
-  display: flex;
-  align-items: start;
-  align-self: center;
-  flex-direction: column;
-  justify-content: center;
-  order: 2;
-}
-
-.about .row .desc h2 {
-  padding: 0rem 0rem 1rem 0rem;
-}
-
-.about .row .desc span {
-  color: var(--primary);
-}
-
-.about .row .desc p {
-  font-size: 1.5rem;
-  margin: 2rem 0 2rem 0;
-  line-height: 3rem;
-}
-
-.about .row .desc h2 {
-  padding: 0rem 0rem 1rem 0rem;
-}
-.about .row .desc span {
-  color: var(--primary);
-}
-
-.about .row .desc p {
-  font-size: 1.5rem;
-  margin: 2rem 0 2rem 0;
-  line-height: 3rem;
-}
-
 /* about section end */
 /* Skill Section Start */
 
@@ -662,6 +584,7 @@ body {
   padding: 0 7%;
   position: relative;
 }
+
 .skills .row {
   position: relative;
   display: block;
@@ -670,7 +593,7 @@ body {
   text-align: center;
 }
 
-.skills .row .vertical{
+.skills .row .vertical {
   position: absolute;
   content: '';
   margin-left: 0.5rem;
@@ -715,11 +638,13 @@ span .circle-3 {
   transform: translateX(-50%) translateY(-50%); /* Menyeimbangkan posisi tengah */
   left: -3%;
 }
+
 span .circle-4 {
   top: 65%; /* Tengah dari atas */
   transform: translateX(-50%) translateY(-50%); /* Menyeimbangkan posisi tengah */
   left: -3%;
 }
+
 span .circle-5 {
   top: 86%; /* Tengah dari atas */
   transform: translateX(-50%) translateY(-50%); /* Menyeimbangkan posisi tengah */
@@ -730,11 +655,13 @@ span .circle-5 {
 .skills .row span {
   color: var(--primary);
 }
+
 .skills .row .btn-skills {
   margin-top: 2rem;
   display: flex;
   justify-content: start;
 }
+
 .skills .row .btn-skills a {
   display: inline-block;
   padding: 0.5rem 2rem;
@@ -747,20 +674,19 @@ span .circle-5 {
   margin-right: 1rem;
   width: 11rem;
 }
+
 .skills .row .btn-skills a:hover {
   background-color: var(--primary);
 }
+
 .skills .row .btn-skills .active {
   background-color: var(--primary);
 }
 
-.skills .row .container{
+.skills .row .container {
   height: auto;
-  padding:2rem 0;
+  padding: 2rem 0;
 }
-
-
-
 
 .skills .row h3 {
   font-size: 24px;
@@ -769,7 +695,7 @@ span .circle-5 {
   align-items: start;
   margin-top: 2rem;
 }
-/* Tools */
+
 /* Tools */
 .skills .row .tools {
   display: flex;
@@ -836,21 +762,24 @@ span .circle-5 {
 }
 
 /* Skill Section End */
-
 /* Footer Start */
+
 footer {
   background-color: #000;
 }
+
 footer .row {
   padding: 3rem 0;
   display: flex;
   position: relative;
   justify-content: space-around;
 }
+
 .footer .row h5 {
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
+
 .footer .row a {
   font-size: 1rem;
   margin: 1rem 0;
@@ -883,7 +812,7 @@ footer .row {
 }
 
 .footer .menu,
-.eksplore {
+.footer .eksplore {
   display: flex;
   flex-direction: column;
 }
@@ -893,17 +822,18 @@ footer .row {
   margin: 1.5rem 0;
 }
 
-.copyright{
+.copyright {
   font-size: 1.2rem;
   height: 8rem;
-  border-top: 2px solid #050817 ;
+  border-top: 2px solid #050817;
   display: flex;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
   padding: 0 7% 0 0;
   margin: 0;
 }
-.copyright img{
+
+.copyright img {
   height: 8rem;
   transition: all 500ms;
   width: 50%; /* Atur lebar gambar sesuai kebutuhan */
@@ -911,9 +841,9 @@ footer .row {
   margin-left: -10rem;
   filter: brightness(0.3);
 }
-/* Footer End */
 
-/* media queri */
+/* Footer End */
+/* media query */
 
 /* laptop */
 @media (max-width: 1366px) {
@@ -928,26 +858,9 @@ footer .row {
     font-size: 62.5%;
   }
 
-  html {
-    scroll-behavior: smooth;
-  }
-
-  h1 .title {
-    font-size: 2rem;
-    font-weight: 100;
-    letter-spacing: 13px;
-  }
-
-  h2 {
-    font-size: 2.5rem;
-    font-weight: 500;
-    margin-top: 2rem;
-  }
-
-  h4 {
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 2rem;
+  .btn-primary,
+  .btn-secondary {
+    transform: scale(0.8);
   }
 
   #hamburger-menu {
@@ -967,36 +880,13 @@ footer .row {
   .navbar .navbar-nav.active {
     right: 0;
   }
+
   .navbar .navbar-nav a {
     color: var(--bg);
     display: block;
     margin: 1.5rem;
     padding: 0.5rem;
     font-size: 2rem;
-  }
-
-  .navbar .navbar-nav a::after {
-    transform-origin: 0 0;
-  }
-  .navbar .navbar-nav a:hover::after {
-    transform: scaleX(0.2);
-  }
-
-  .navbar .search-form {
-    width: 90%;
-    right: 2rem;
-  }
-
-  .hero {
-    height: 100vh;
-  }
-  .hero .row .content {
-    padding: 2rem 2%;
-    margin-left: 0%;
-    /* background-color: #614daa; */
-    /* max-width: 79rem; */
-    width: 60%;
-    text-align: start;
   }
 
   .hero .row .content h1 {
@@ -1007,54 +897,45 @@ footer .row {
     margin-bottom: 2rem;
   }
 
-  .hero .row .content h1 span {
-    color: var(--primary);
-  }
-
   .hero .row .content p {
     font-size: 1.3rem;
     margin-top: 1rem;
     line-height: 1.4;
     font-weight: 200;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.514);
-    /* mix-blend-mode: difference; */
   }
 
-  .hero .row .content a {
-    margin-top: 2rem;
-    margin-right: 2rem;
+  .hero .row .content .button {
+    gap: 0;
+    padding: 0;
   }
 
   .hero .row .profil {
-    /* background-color: red; */
     margin-top: 3rem;
     width: 40%;
-    display: flex; /* Menggunakan Flexbox dalam elemen profil juga */
-    justify-content: center; /* Menempatkan konten di tengah secara horizontal */
-    align-items: center; /* Menempatkan konten di tengah secara vertikal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .hero .row .profil img {
     width: 25.375rem;
     height: 25.375rem;
   }
-  .pseudo::before {
-    content: ''; /* Membuat pseudo-elemen tanpa teks */
-    position: absolute; /* Memungkinkan pseudo-elemen diposisikan secara absolut */
-    width: 0; /* Lebar garis vertikal */
-    height: 0; /* Tinggi garis vertikal mengikuti tinggi kontainer */
-  }
+
+  .pseudo::before,
   .pseudo::after {
-    content: ''; /* Membuat pseudo-elemen tanpa teks */
-    position: absolute; /* Memungkinkan pseudo-elemen diposisikan secara absolut */
-    width: 0; /* Lebar garis vertikal */
-    height: 0; /* Tinggi garis vertikal mengikuti tinggi kontainer */
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
   }
 
-  /* services section start */
+  /* services section */
   .services {
     padding: 0 7%;
   }
+
   .services .row {
     flex-wrap: wrap;
     height: auto;
@@ -1065,59 +946,36 @@ footer .row {
     margin-bottom: 1rem;
     width: 100%;
   }
+
   .services .row .col-left a {
     margin-top: -1rem;
   }
 
-  .services .row .col-1 {
-    margin: 0;
-    padding: 0;
-  }
+  .services .row .col-1,
   .services .row .col-2 {
     margin: 0;
     padding: 0;
   }
-  .services .grid-service-a .card {
-    width: 100%;
-    height: 50%;
-  }
+
+  .services .grid-service-a .card,
   .services .grid-service-b .card {
     width: 100%;
     height: 50%;
   }
 
-  /* project section start */
+  /* project section */
+  .project .row {
+    height: auto;
+  }
 
-  /* project section end */
-
-  /* about section start */
+  /* about section */
   .about .row {
     flex-wrap: wrap;
     justify-content: center;
-  }
-  .about .row .profil img {
-    object-fit: cover; /* Menyesuaikan gambar agar tidak terdistorsi */
-    position: relative; /* Memastikan gambar berada di atas pseudo-elemen */
-    z-index: 1; /* Mengatur z-index lebih tinggi dari pseudo-elemen */
-    border-radius: 20px 0 20px 0;
-    width: 100%;
+    height: auto;
+    margin: 5rem 0;
   }
 
-  .about .row .profil::before {
-    content: ''; /* Membuat pseudo-elemen kosong */
-    position: absolute; /* Memungkinkan positioning absolut */
-    margin-top: 2rem; /* Menggeser border ke atas */
-    margin-left: 2rem; /* Menggeser border ke kiri */
-    border: 0.2rem solid var(--primary); /* Border putih */
-    border-radius: 30px 0 30px 0; /* Jika Anda ingin border dengan sudut melengkung */
-    z-index: -1; /* Menempatkan pseudo-elemen di belakang gambar */
-  }
-
-  /* .about .row .profil {
-    order: 2;
-    margin: 2rem 0;
-    align-self: start;
-  } */
   .about .row .profil {
     display: none;
   }
@@ -1126,16 +984,25 @@ footer .row {
     order: 1;
     align-self: start;
   }
-  /* about section end */
 
-  /* services section end  */
+  .about .row .profil img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 0 20px 0;
+  }
+
+  .about .row .profil::before {
+    border: 0.2rem solid var(--primary);
+    border-radius: 30px 0 30px 0;
+  }
 }
-
 /* mobile phone */
 @media (max-width: 450px) {
   html {
     font-size: 55%;
   }
+
+  /* Hero Section */
   .hero .row {
     display: flex;
     flex-wrap: wrap;
@@ -1146,22 +1013,19 @@ footer .row {
     order: 2;
     padding: 2rem 1%;
     width: 100%;
-    height: 100%;
     text-align: center;
   }
+
   .hero .row .profil {
     margin-top: 10rem;
     width: 100%;
     height: 40%;
-    display: flex; /* Menggunakan Flexbox dalam elemen profil juga */
-    justify-content: center; /* Menempatkan konten di tengah secara horizontal */
-    align-items: center; /* Menempatkan konten di tengah secara vertikal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .hero .row .circle {
-    display: none;
-  }
-
+  .hero .row .circle,
   .hero .row .content .line {
     display: none;
   }
@@ -1170,10 +1034,12 @@ footer .row {
     margin: 2rem 0;
   }
 
+  /* Services Section */
   .services .row {
     height: auto;
     margin: auto;
   }
+
   .services .row .col-left {
     display: flex;
     flex-wrap: wrap;
@@ -1181,85 +1047,41 @@ footer .row {
     text-align: center;
   }
 
-  .services .row .col-1 {
-    /* background-color: green; */
-    margin-top: 0;
-    padding: 0;
-    width: 19rem;
-  }
+  .services .row .col-1,
   .services .row .col-2 {
-    /* background-color:yellow; */
     padding: 0;
     width: 19rem;
   }
-  /* Services Section end */
 
-  /* project section start */
-
+  /* Project Section */
   .project .row {
     height: auto;
     margin: auto;
   }
+
   .project .row .container .item {
     width: 100%;
   }
 
-  /* project section end */
-
-  /* about section start */
-
+  /* About Section */
   .about .row {
-    padding: 0 0%;
-    margin: 0 0;
+    padding: 0;
+    margin: 0;
     height: auto;
-    margin-left: 0;
   }
 
   .about .row .desc {
     align-items: center;
     text-align: center;
   }
-  .about .profil img {
-    display: none;
-  }
 
+  .about .row .profil img,
   .about .row .profil::before {
     display: none;
   }
 
-  /* about section end */
-
-  /* skill section start */
+  /* Skills Section */
   .skills .row .btn-skills {
     justify-content: center;
   }
-
-  /* .skills .row .tools{
-    gap: 0;
-    margin: 0 0;
-  }
-  .skills .row .btn-skills {
-    justify-content: center;
-  }
-
-  .skills .row .container {
-    margin: 0;
-    padding: 0;
-  }
-
-  .skills .row .tools {
-    margin: 0 0;
-    gap: 0rem;
-    padding: 0 0;
-  }
-  .skills .row .container .isi-tool {
-    margin: 0 0;
-    transform: scale(0.5);
-    padding: 0 0;
-    align-items: start;
-  }
-  .skills .row .container .isi-tool:hover {
-    transform: scale(0.7);
-  } */
-  /* skill section end */
 }
