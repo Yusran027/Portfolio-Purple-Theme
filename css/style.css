@@ -417,7 +417,6 @@ body {
 
 /* project section start */
 .project {
-  height: 100vh;
   width: 100%;
   padding: 0 7%;
   position: relative;
@@ -587,6 +586,7 @@ body {
   text-align: start;
   height: 100vh;
   flex-direction: row; /* Ubah dari column ke row */
+  gap: 3rem;
 }
 
 .about .row .profil {
@@ -625,7 +625,6 @@ body {
   align-self: center;
   flex-direction: column;
   justify-content: center;
-  margin-left: 3rem;
   order: 2;
 }
 
@@ -884,7 +883,7 @@ footer .menu,
   flex-direction: column;
 }
 
-footer .contact p{
+footer .contact p {
   font-size: 1.2rem;
   margin: 1.5rem 0;
 }
@@ -1071,8 +1070,6 @@ footer .contact p{
   .about .row {
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 5rem;
-    height: 50%;
   }
   .about .row .profil img {
     object-fit: cover; /* Menyesuaikan gambar agar tidak terdistorsi */
@@ -1092,11 +1089,15 @@ footer .contact p{
     z-index: -1; /* Menempatkan pseudo-elemen di belakang gambar */
   }
 
-  .about .row .profil {
+  /* .about .row .profil {
     order: 2;
     margin: 2rem 0;
     align-self: start;
+  } */
+  .about .row .profil {
+    display: none;
   }
+
   .about .row .desc {
     order: 1;
     align-self: start;
@@ -1184,8 +1185,15 @@ footer .contact p{
   /* about section start */
 
   .about .row {
+    padding: 0 0%;
+    margin: 0 0;
     height: auto;
-    margin: auto;
+    margin-left: 0;
+  }
+
+  .about .row .desc {
+    align-items: center;
+    text-align: center;
   }
   .about .profil img {
     display: none;
