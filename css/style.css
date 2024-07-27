@@ -670,13 +670,13 @@ body {
   text-align: center;
 }
 
-.vertical-1 {
-  content: '';
+.skills .row .vertical{
   position: absolute;
+  content: '';
+  margin-left: 0.5rem;
   width: 0.2rem;
-  margin-left: -2.5rem;
   margin-top: 1rem;
-  height: 100%;
+  height: 100vh;
   background-color: white;
   display: flex;
   align-self: start;
@@ -754,7 +754,14 @@ span .circle-5 {
   background-color: var(--primary);
 }
 
-/* Headings */
+.skills .row .container{
+  height: auto;
+  padding:2rem 0;
+}
+
+
+
+
 .skills .row h3 {
   font-size: 24px;
   font-weight: 400;
@@ -832,7 +839,6 @@ span .circle-5 {
 
 /* Footer Start */
 footer {
-  padding: 0 7%;
   background-color: #000;
 }
 footer .row {
@@ -841,11 +847,11 @@ footer .row {
   position: relative;
   justify-content: space-around;
 }
-footer .row h5 {
+.footer .row h5 {
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
-footer .row a {
+.footer .row a {
   font-size: 1rem;
   margin: 1rem 0;
   text-decoration: none; /* Menghilangkan garis bawah */
@@ -854,7 +860,7 @@ footer .row a {
   cursor: pointer; /* Menambahkan pointer untuk menunjukkan elemen bisa diklik */
 }
 
-footer img {
+.footer img {
   width: 15rem;
 }
 
@@ -864,27 +870,46 @@ footer img {
   gap: 1.3rem;
 }
 
-footer .sosmed img {
+.footer .sosmed img {
   margin: 2rem 0;
   width: 2rem;
   filter: grayscale(90%);
 }
 
-footer .sosmed img:hover {
+.footer .sosmed img:hover {
   filter: grayscale(0%);
   cursor: pointer;
   transform: scale(1.1);
 }
 
-footer .menu,
+.footer .menu,
 .eksplore {
   display: flex;
   flex-direction: column;
 }
 
-footer .contact p {
+.footer .contact p {
   font-size: 1.2rem;
   margin: 1.5rem 0;
+}
+
+.copyright{
+  font-size: 1.2rem;
+  height: 8rem;
+  border-top: 2px solid #050817 ;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding: 0 7% 0 0;
+  margin: 0;
+}
+.copyright img{
+  height: 8rem;
+  transition: all 500ms;
+  width: 50%; /* Atur lebar gambar sesuai kebutuhan */
+  object-fit: cover; /* Zoom dan crop gambar agar menutupi elemen */
+  margin-left: -10rem;
+  filter: brightness(0.3);
 }
 /* Footer End */
 
