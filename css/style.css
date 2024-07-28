@@ -1326,26 +1326,23 @@ footer .row {
     font-size: 55%;
   }
 
-
   /* Modal container */
 
-
-/* Modal content */
-.modal{
-  height: 100vh;
-  margin-top: 8rem;
-}
-.modal-content .body-modal .contact-form{
-  width: 100%;
-  padding: 0;
-}
-.modal-content .body-modal .contact-form a{
-margin-left: -1.7rem;
-}
-.modal-content .body-modal .contact-info{
-  display: none;
-  
-}
+  /* Modal content */
+  .modal {
+    height: 100vh;
+    margin-top: 8rem;
+  }
+  .modal-content .body-modal .contact-form {
+    width: 100%;
+    padding: 0;
+  }
+  .modal-content .body-modal .contact-form a {
+    margin-left: -1.7rem;
+  }
+  .modal-content .body-modal .contact-info {
+    display: none;
+  }
 
   /* Hero Section */
   .hero .row {
@@ -1360,7 +1357,9 @@ margin-left: -1.7rem;
     width: 100%;
     text-align: center;
   }
-
+  .hero .row .content .button {
+    justify-content: center;
+  }
   .hero .row .profil {
     margin-top: 10rem;
     width: 100%;
@@ -1406,6 +1405,28 @@ margin-left: -1.7rem;
 
   .project .row .container .item {
     width: 100%;
+  }
+
+  /* project modal */
+  .modal-unique {
+    margin-top: 10rem;
+  }
+
+  .modal-unique-content {
+    justify-content: center;
+    height: 50vh;
+    width: 80%;
+  }
+
+  .modal-unique .modal-unique-content h5 {
+    font-size: 5rem;
+  }
+  .modal-unique .modal-unique-content h4 {
+    font-size: 8rem;
+  }
+  .modal-unique .modal-unique-content p {
+    margin-top: 2rem;
+    font-size: 1rem;
   }
 
   /* About Section */
