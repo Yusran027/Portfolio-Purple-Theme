@@ -46,7 +46,7 @@
           </h4>
           <div class="button">
             <a id="openModalBtn" class="btn-primary">Contact Me</a>
-            <a href="#" class="btn-secondary">Download CV</a>
+            <a href="https://drive.google.com/file/d/1tvQKrZudH0s8m7YMTWPsnYGY4rUulvCk/view?usp=sharing" target="_blank" class="btn-secondary">Download CV</a>
           </div>
         </div>
         <div class="profil">
@@ -54,6 +54,47 @@
         </div>
       </div>
     </section>
+
+    <!-- Modal start -->
+    <div id="notification" class="notification">
+      <p>message successfully !</p>
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="title-modal">
+          <span class="close">&times;</span>
+          <h2>Just say Hello !</h2>
+          <p>Tell me someting good!.</p>
+        </div>
+        <div class="body-modal">
+          <div class="contact-form">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="your name" />
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="your email" />
+            </div>
+            <div class="form-message">
+              <textarea id="message" name="message" placeholder="your message"></textarea>
+            </div>
+            <a type="submit" class="btn-primary" onclick="showNotification()">Send</a>
+          </div>
+          <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Luwuk, Sulawesi Tengah</p>
+            <p>Call me: +62 856 9625 2046</p>
+            <h2>Follow Me</h2>
+            <div class="social">
+              <p>Instagram</p>
+              <p>LinkedIn</p>
+              <p>Github</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal end -->
 
     <!-- Services Section -->
     <section class="services" id="services">
@@ -114,7 +155,7 @@
             <figcaption>
               <h3>Frontend</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <img src="assets/icon/open.svg" alt="Open Project" />
+              <img src="assets/icon/open.svg" alt="Open Project" class="open-modal" />
             </figcaption>
           </figure>
           <figure class="item">
@@ -122,7 +163,7 @@
             <figcaption>
               <h3>Design Graphic</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <img src="assets/icon/open.svg" alt="Open Project" />
+              <img src="assets/icon/open.svg" alt="Open Project" class="open-modal" />
             </figcaption>
           </figure>
           <figure class="item">
@@ -130,7 +171,7 @@
             <figcaption>
               <h3>Video Editing</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <img src="assets/icon/open.svg" alt="Open Project" />
+              <img src="assets/icon/open.svg" alt="Open Project" class="open-modal" />
             </figcaption>
           </figure>
           <figure class="item">
@@ -138,12 +179,23 @@
             <figcaption>
               <h3>Live Streaming</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <img src="assets/icon/open.svg" alt="Open Project" />
+              <img src="assets/icon/open.svg" alt="Open Project" class="open-modal" />
             </figcaption>
           </figure>
         </div>
       </div>
     </section>
+
+    <!-- Unique Modal -->
+    <div id="uniqueModal" class="modal-unique">
+      <span class="modal-unique-close">&times;</span>
+      <div class="modal-unique-content">
+        <h5 id="modal-unique-title"></h5>
+        <h4>404</h4>
+        <p>Page Not Found!</p>
+        <p id="modal-unique-description"></p>
+      </div>
+    </div>
 
     <!-- About Section -->
     <section class="about" id="about">
@@ -157,7 +209,7 @@
             I am a graduate of Bachelor of Science in Computer Engineering, specializing in Information Technology, with over 1 year of experience in Public Information and Communication. I possess skills in technical problem-solving,
             software and hardware management. I am capable of working independently as well as in a team, with strong communication skills and a high dedication to career development in the field of Information.
           </p>
-          <a href="#" class="btn-primary">Text Me</a>
+          <a href="https://drive.google.com/file/d/1tvQKrZudH0s8m7YMTWPsnYGY4rUulvCk/view?usp=sharing" target="_blank" class="btn-primary">More</a>
         </div>
       </div>
     </section>
@@ -329,37 +381,6 @@
         </div>
       </div>
     </section>
-
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <div class="contact-form">
-          <h2>Just say Hello !</h2>
-          <p>Beri tahu saya siapa anda!.</p>
-          <div class="form-group">
-            <input type="text" id="name" name="name" placeholder="your name" />
-          </div>
-          <div class="form-group">
-            <input type="email" id="email" name="email" placeholder="your email" />
-          </div>
-          <div class="form-message">
-            <textarea id="message" name="message" placeholder="your message"></textarea>
-          </div>
-          <a href="#" class="btn-primary">Send</a>
-        </div>
-        <div class="contact-info">
-          <span class="close">&times;</span>
-          <h2>Contact Information</h2>
-          <p>Luwuk, Sulawesi Tengah</p>
-          <p>Call me: +62 856 9625 2046</p>
-          <h2>Follow Me</h2>
-          <div class="social">
-            <p>Instagram</p>
-            <p>LinkedIn</p>
-            <p>Github</p>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Footer -->
     <footer>
