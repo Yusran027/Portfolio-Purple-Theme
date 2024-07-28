@@ -1326,6 +1326,27 @@ footer .row {
     font-size: 55%;
   }
 
+
+  /* Modal container */
+
+
+/* Modal content */
+.modal{
+  height: 100vh;
+  margin-top: 8rem;
+}
+.modal-content .body-modal .contact-form{
+  width: 100%;
+  padding: 0;
+}
+.modal-content .body-modal .contact-form a{
+margin-left: -1.7rem;
+}
+.modal-content .body-modal .contact-info{
+  display: none;
+  
+}
+
   /* Hero Section */
   .hero .row {
     display: flex;

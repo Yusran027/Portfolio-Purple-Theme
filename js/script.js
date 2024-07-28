@@ -121,14 +121,15 @@ span.onclick = function () {
 };
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
+// Fungsi untuk menangani klik di luar modal
+window.addEventListener('click', function (event) {
   if (event.target == modal) {
     modal.querySelector('.modal-content').classList.remove('show');
     setTimeout(function () {
       modal.style.display = 'none';
     }, 500);
   }
-};
+});
 
 // animasi skill muncul dari kiri ke kanan
 document.addEventListener('DOMContentLoaded', function () {
@@ -189,11 +190,11 @@ closeModalBtn.onclick = function () {
 };
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
+window.addEventListener('click', function (event) {
   if (event.target == uniqueModal) {
     uniqueModal.querySelector('.modal-unique-content').classList.remove('show');
     setTimeout(function () {
       uniqueModal.style.display = 'none';
     }, 500);
   }
-};
+});
