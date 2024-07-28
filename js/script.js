@@ -198,3 +198,50 @@ window.addEventListener('click', function (event) {
     }, 500);
   }
 });
+
+// animasi mengetik services & about section
+document.addEventListener('DOMContentLoaded', function () {
+  const paragraphs = document.querySelectorAll('.typing-paragraph');
+
+  paragraphs.forEach((typingParagraph) => {
+    const paragraphText = typingParagraph.textContent;
+    typingParagraph.textContent = '';
+
+    let typingIndex = 0;
+    const typingSpeed = 3000 / paragraphText.length;
+    let lastTime = 0;
+
+    function type(time) {
+      if (!lastTime) lastTime = time;
+      const delta = time - lastTime;
+
+      if (delta >= typingSpeed) {
+        if (typingIndex < paragraphText.length) {
+          typingParagraph.textContent += paragraphText.charAt(typingIndex);
+          typingIndex++;
+          lastTime = time;
+        }
+      }
+
+      if (typingIndex < paragraphText.length) {
+        requestAnimationFrame(type);
+      }
+    }
+
+    function resetTyping() {
+      typingParagraph.textContent = '';
+      typingIndex = 0;
+      requestAnimationFrame(type);
+    }
+
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          resetTyping();
+        }
+      });
+    });
+
+    observer.observe(typingParagraph);
+  });
+});

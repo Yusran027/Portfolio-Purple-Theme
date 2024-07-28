@@ -847,9 +847,11 @@ textarea::placeholder {
 
 .about .row .desc p {
   font-size: 1.5rem;
-  margin: 2rem 0 2rem 0;
+  margin: 0rem 0 2rem 0;
   line-height: 3rem;
 }
+
+/* enimasi ketikan */
 
 .about .row .profil {
   display: flex;
@@ -1127,6 +1129,7 @@ footer .row {
   margin: 2rem 0;
   width: 2rem;
   filter: grayscale(90%);
+  cursor: pointer;
 }
 
 .footer .sosmed img:hover {
@@ -1446,7 +1449,14 @@ footer .row {
     display: none;
   }
 
+  .about .row .desc h2 {
+    margin-top: 3rem;
+  }
+
   /* Skills Section */
+  .skills .row {
+    margin-top: 2rem;
+  }
   .skills .row .btn-skills {
     justify-content: center;
   }
